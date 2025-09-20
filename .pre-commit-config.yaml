@@ -6,9 +6,8 @@ repos:
   - repo: local
     hooks:
       - id: prettier
-        name: prettier-manual
-        alias: tmp
-        entry: npx prettier --config ./.pre-commit.prettierrc.js --write --ignore-unknown --list-different .
+        name: prettier
+        entry: npx prettier --config ./.pre-commit.prettierrc.js --write --ignore-unknown .
         language: node
         additional_dependencies:
           - prettier@3.6.2
