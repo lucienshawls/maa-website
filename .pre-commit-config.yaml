@@ -3,22 +3,13 @@ ci:
   autofix_commit_msg: "chore: Auto update by pre-commit hooks [skip changelog]"
   autofix_prs: true
 repos:
-  # - repo: https://github.com/rbubley/mirrors-prettier
-  #   rev: v3.5.3
-  #   hooks:
-  #     - id: prettier
-  #       name: prettier (website)
-  #       additional_dependencies:
-  #         - "prettier"
-  #         - "@trivago/prettier-plugin-sort-imports"
   - repo: local
     hooks:
       - id: prettier
-        name: Prettier
-        alias: prettier-local
-        entry: pnpm prettier --write --ignore-unknown --list-different .
+        name: prettier-manual
+        alias: tmp
+        entry: npx prettier --config ./.pre-commit.prettierrc.js --write --ignore-unknown --list-different .
         language: node
         additional_dependencies:
-          - pnpm@10.2.0
           - prettier@3.6.2
           - "@trivago/prettier-plugin-sort-imports@5.2.2"
