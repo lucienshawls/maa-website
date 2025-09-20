@@ -1,8 +1,8 @@
 import { LayoutStateProvider } from '@/contexts/LayoutStateContext'
 
-import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { motion } from 'framer-motion'
 
 import { LanguageToggle } from './components/LanguageToggle'
 import { ThemeToggle } from './components/ThemeToggle'
