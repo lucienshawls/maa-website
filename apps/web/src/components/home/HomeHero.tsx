@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unknown-property */
 import { useTheme } from '@/contexts/ThemeContext'
-import { useTranslation } from 'react-i18next'
 import { Canvas } from '@react-three/fiber'
 import { ErrorBoundary } from '@sentry/react'
 
 import { motion } from 'framer-motion'
 import { FC, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useWindowSize } from 'react-use'
 
 import { AnimatedBlobs } from './AnimatedBlobs/AnimatedBlobs'
