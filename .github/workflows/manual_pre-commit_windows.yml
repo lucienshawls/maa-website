@@ -1,23 +1,23 @@
-name: Pre-commit Manual Trigger
+name: Windows Pre-commit Workflow
 
 on:
   workflow_dispatch:
 
 jobs:
-  build:
-    name: Run Pre-commit Hooks
-    runs-on: ubuntu-latest
+  run-windows:
+    name: Run Pre-commit Hooks on Windows
+    runs-on: windows-latest
     steps:
       - name: Check out code
         uses: actions/checkout@v5
         with:
           show-progress: false
-      
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
