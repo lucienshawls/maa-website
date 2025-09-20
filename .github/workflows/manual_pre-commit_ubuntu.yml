@@ -25,25 +25,3 @@ jobs:
 
       - name: Run
         run: pre-commit run --all-files --show-diff-on-failure
-
-  run-windows:
-    name: Run Pre-commit Hooks on Windows
-    runs-on: windows-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v5
-        with:
-          show-progress: false
-
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install pre-commit
-
-      - name: Run
-        run: pre-commit run --all-files --show-diff-on-failure
