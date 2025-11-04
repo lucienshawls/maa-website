@@ -1,12 +1,12 @@
 import { LayoutStateProvider } from '@/contexts/LayoutStateContext'
 
-import { HomeHero } from './components/home/HomeHero'
 import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { LanguageToggle } from './components/LanguageToggle'
 import { ThemeToggle } from './components/ThemeToggle'
+import { HomeHero } from './components/home/HomeHero'
 import { ThemeProvider } from './contexts/ThemeContext'
 import { getLanguageOption } from './i18n'
 
