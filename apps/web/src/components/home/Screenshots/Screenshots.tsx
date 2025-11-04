@@ -1,7 +1,7 @@
 import { useTheme } from '@/contexts/ThemeContext'
 import { getLanguageOption } from '@/i18n'
-import { useFrame } from '@react-three/fiber'
 import { useTexture } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 import { useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
