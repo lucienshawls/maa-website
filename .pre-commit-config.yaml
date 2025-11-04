@@ -6,7 +6,7 @@ repos:
   - repo: local
     hooks:
       - id: prettier
-        name: Prettier
+        name: prettier
         entry: npx prettier --config ./.pre-commit.prettierrc.cjs --write --ignore-unknown .
         language: node
         additional_dependencies:
